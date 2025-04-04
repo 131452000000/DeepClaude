@@ -1,12 +1,12 @@
 {
     "reasoner_models": {
-        "DeepSeek/DeepSeek-Reasoner": {
-            "model_id": "deepseek-reasoner",
+        "星绿洲API/DeepSeek-Reasoner": {
+            "model_id": "deepseek-r1-2025-01-20",
             "api_key": "*************",
-            "api_base_url": "https://api.deepseek.com",
+            "api_base_url": " https://api.xinglvzhou.xyz",
             "api_request_address": "v1/chat/completions",
-            "is_origin_reasoning": true,
-            "is_valid": false,
+            "is_origin_reasoning": false,
+            "is_valid": true,
             "proxy_open": false
         },
         "Volcengine/DeepSeek-R1": {
@@ -29,19 +29,10 @@
             "is_valid": false,
             "proxy_open": true
         },
-        "DMXapi/Claude-3-7-Sonnet": {
+        "星绿洲API/Claude-3-7-Sonnet": {
             "model_id": "claude-3-7-sonnet-20250219",
             "api_key": "**************",
-            "api_base_url": "https://www.dmxapi.cn",
-            "api_request_address": "v1/chat/completions",
-            "model_format": "openai",
-            "is_valid": true,
-            "proxy_open": false
-        },
-        "OpenRouter/Claude-3-7-Sonnet": {
-            "model_id": "anthropic/claude-3.7-sonnet",
-            "api_key": "***********",
-            "api_base_url": "https://openrouter.ai/api",
+            "api_base_url": " https://api.xinglvzhou.xyz",
             "api_request_address": "v1/chat/completions",
             "model_format": "openai",
             "is_valid": true,
@@ -56,11 +47,11 @@
             "is_valid": true,
             "proxy_open": true
         },
-        "Gemini/Gemini-2.0-Pro": {
-            "model_id": "gemini-2.0-pro-exp",
+        "星绿洲API/Gemini-2.5-Pro": {
+            "model_id": "gemini-2.5-pro-exp-03-25",
             "api_key": "***********",
-            "api_base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
-            "api_request_address": "chat/completions",
+            "api_base_url": " https://api.xinglvzhou.xyz",
+            "api_request_address": "v1/chat/completions",
             "model_format": "openai",
             "is_valid": true,
             "proxy_open": true
@@ -76,26 +67,21 @@
         ],
         "log_level": "INFO",
         "api_key": "123456",
-        "save_deepseek_tokens":false,
+        "save_deepseek_tokens": false,
         "save_deepseek_tokens_max_tokens": 5
     },
     "composite_models": {
         "deepclaude": {
             "model_id": "deepclaude",
-            "reasoner_models": "Volcengine/DeepSeek-R1",
-            "target_models": "DMXapi/Claude-3-7-Sonnet",
+            "reasoner_models": "星绿洲API/DeepSeek-Reasoner",
+            "target_models": "星绿洲API/Claude-3-7-Sonnet",
             "is_valid": true
-        },
-        "deepgeminiflash": {
-            "model_id": "deepgeminiflash",
-            "reasoner_models": "Volcengine/DeepSeek-R1",
-            "target_models": "Gemini/Gemini-2.0-Flash",
-            "is_valid": true
+        
         },
         "deepgeminipro": {
             "model_id": "deepgeminipro",
-            "reasoner_models": "Volcengine/DeepSeek-R1",
-            "target_models": "Gemini/Gemini-2.0-Pro",
+            "reasoner_models": "星绿洲API/DeepSeek-Reasoner",
+            "target_models": "星绿洲API/Gemini-2.5-Pro",
             "is_valid": true
         }
     }
