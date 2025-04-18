@@ -199,10 +199,3 @@ API 密钥为默认的 123456，如果你在系统设置内进行修改，则改
 # Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=ErlichLiu/DeepClaude&type=Date)](https://star-history.com/#ErlichLiu/DeepClaude&Date)
-
-# Buy me a coffee
-<img src="https://img.erlich.fun/personal-blog/uPic/IMG_3625.JPG" alt="微信赞赏码" style="width: 400px;"/>
-
-# About Me
-- Email: erlichliu@gmail.com
-- Website: [Erlichliu](https://erlich.fun)
