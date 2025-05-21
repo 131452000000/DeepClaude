@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+.venv
+
+# Windsurf
+.windsurfrules
+
+# DS_Store
+.DS_Store
+
+# model_manager
+model_manager/model_configs.json
